@@ -1,0 +1,149 @@
+link:
+
+https://stackoverflow.com/questions/65703840/how-to-properly-configure-jakarta-ee-libraries-in-maven-pom-xml-for-tomcat
+
+
+
+You're basically physically including Tomcat 10.x specific libraries in WAR and then deploying the WAR to Tomcat 9.x. This is not the correct approach at all. Moreover, Tomcat 10.x was the first version to be Jakartified, not Tomcat 9.x.
+
+Tomcat 9.x
+For your Tomcat 9.x, which is based on Servlet 4.0, JSP 2.3, EL 3.0, WS 1.1 and JASIC 1.0, you should use javax.* imports and the entire <dependencies> section should minimally look like:
+
+<dependencies>
+    <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>4.0.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>javax.servlet.jsp</groupId>
+        <artifactId>javax.servlet.jsp-api</artifactId>
+        <version>2.3.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>javax.el</groupId>
+        <artifactId>javax.el-api</artifactId>
+        <version>3.0.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>javax.websocket</groupId>
+        <artifactId>javax.websocket-api</artifactId>
+        <version>1.1</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>javax.security.enterprise</groupId>
+        <artifactId>javax.security.enterprise-api</artifactId>
+        <version>1.0</version>
+        <scope>provided</scope>
+    </dependency>
+</dependencies>
+Tomcat 10.0.x
+For Tomcat 10.0.x, which is based on Servlet 5.0, JSP 3.0, EL 4.0, WS 2.0 and JASIC 2.0, you should use jakarta.* imports and the entire <dependencies> section should minimally look like:
+
+<dependencies>
+    <dependency>
+        <groupId>jakarta.servlet</groupId>
+        <artifactId>jakarta.servlet-api</artifactId>
+        <version>5.0.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>jakarta.servlet.jsp</groupId>
+        <artifactId>jakarta.servlet.jsp-api</artifactId>
+        <version>3.0.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>jakarta.el</groupId>
+        <artifactId>jakarta.el-api</artifactId>
+        <version>4.0.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>jakarta.websocket</groupId>
+        <artifactId>jakarta.websocket-api</artifactId>
+        <version>2.0.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>jakarta.security.enterprise</groupId>
+        <artifactId>jakarta.security.enterprise-api</artifactId>
+        <version>2.0.0</version>
+        <scope>provided</scope>
+    </dependency>
+</dependencies>
+Tomcat 10.1.x
+For Tomcat 10.1.x, which is based on Servlet 6.0, JSP 3.1, EL 5.0, WS 2.1 and JASIC 3.0, you should use jakarta.* imports and the entire <dependencies> section should minimally look like:
+
+<dependencies>
+    <dependency>
+        <groupId>jakarta.servlet</groupId>
+        <artifactId>jakarta.servlet-api</artifactId>
+        <version>6.0.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>jakarta.servlet.jsp</groupId>
+        <artifactId>jakarta.servlet.jsp-api</artifactId>
+        <version>3.1.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>jakarta.el</groupId>
+        <artifactId>jakarta.el-api</artifactId>
+        <version>5.0.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>jakarta.websocket</groupId>
+        <artifactId>jakarta.websocket-api</artifactId>
+        <version>2.1.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>jakarta.security.enterprise</groupId>
+        <artifactId>jakarta.security.enterprise-api</artifactId>
+        <version>3.0.0</version>
+        <scope>provided</scope>
+    </dependency>
+</dependencies>
+For Tomcat 11.x, which is based on Servlet 6.1, JSP 4.0, EL 6.0, WS 2.2 and JASIC 4.0, you should use jakarta.* imports and the entire <dependencies> section should minimally look like:
+
+
+<dependencies>
+    <dependency>
+        <groupId>jakarta.servlet</groupId>
+        <artifactId>jakarta.servlet-api</artifactId>
+        <version>6.1.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>jakarta.servlet.jsp</groupId>
+        <artifactId>jakarta.servlet.jsp-api</artifactId>
+        <version>4.0.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>jakarta.el</groupId>
+        <artifactId>jakarta.el-api</artifactId>
+        <version>6.0.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>jakarta.websocket</groupId>
+        <artifactId>jakarta.websocket-api</artifactId>
+        <version>2.2.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>jakarta.security.enterprise</groupId>
+        <artifactId>jakarta.security.enterprise-api</artifactId>
+        <version>3.1.0</version>
+        <scope>provided</scope>
+    </dependency>
+</dependencies>
+
