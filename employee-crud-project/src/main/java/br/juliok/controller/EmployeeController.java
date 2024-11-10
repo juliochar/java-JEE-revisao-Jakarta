@@ -77,8 +77,11 @@ public class EmployeeController extends HttpServlet {
 			break;
 		case "/get":
 			getEmployee(request, response);
-		default:
 			break;
+		default:{
+			getallEmployee(request, response);
+			break;
+			}
 		}
 		
 	}
@@ -113,6 +116,9 @@ public class EmployeeController extends HttpServlet {
 		
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/employeesView.jsp");
+		request.setAttribute("employees", employees);
+		dispatcher.forward(request, response);
+		
 
 		
 	}
