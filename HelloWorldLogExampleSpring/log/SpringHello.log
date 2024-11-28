@@ -1,0 +1,78 @@
+2024-11-28T00:00:43.536-03:00  INFO 9432 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Starting HelloWorldLogExampleSpringApplication using Java 23 with PID 9432 (C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring\target\classes started by PownTwo in C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring)
+2024-11-28T00:00:43.546-03:00  INFO 9432 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T00:00:44.001-03:00  INFO 9432 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Started HelloWorldLogExampleSpringApplication in 0.768 seconds (process running for 1.318)
+2024-11-28T00:00:44.005-03:00  INFO 9432 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : Olá.. log
+2024-11-28T00:00:44.005-03:00 ERROR 9432 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : error teste
+2024-11-28T00:02:23.203-03:00  INFO 15440 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Starting HelloWorldLogExampleSpringApplication using Java 23 with PID 15440 (C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring\target\classes started by PownTwo in C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring)
+2024-11-28T00:02:23.205-03:00  INFO 15440 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T00:02:23.645-03:00  INFO 15440 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Started HelloWorldLogExampleSpringApplication in 0.75 seconds (process running for 1.301)
+2024-11-28T00:02:23.648-03:00  INFO 15440 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : Olá.. log
+2024-11-28T00:02:23.648-03:00 ERROR 15440 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : error teste
+2024-11-28T00:11:23.383-03:00  INFO 10948 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Starting HelloWorldLogExampleSpringApplication using Java 23 with PID 10948 (C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring\target\classes started by PownTwo in C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring)
+2024-11-28T00:11:23.385-03:00  INFO 10948 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T00:11:23.814-03:00  INFO 10948 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Started HelloWorldLogExampleSpringApplication in 0.731 seconds (process running for 1.292)
+2024-11-28T00:11:23.817-03:00  INFO 10948 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : Olá.. log
+2024-11-28T00:11:23.817-03:00 ERROR 10948 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : error teste
+2024-11-28T00:15:02.887-03:00  INFO 18188 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Starting HelloWorldLogExampleSpringApplication using Java 23 with PID 18188 (C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring\target\classes started by PownTwo in C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring)
+2024-11-28T00:15:02.888-03:00  INFO 18188 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T00:15:03.322-03:00  INFO 18188 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Started HelloWorldLogExampleSpringApplication in 0.731 seconds (process running for 1.296)
+2024-11-28T00:15:03.324-03:00  INFO 18188 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : Olá.. log
+2024-11-28T00:15:03.325-03:00 ERROR 18188 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : error teste
+2024-11-28T00:15:03.326-03:00  INFO 18188 --- [HelloWorldLogExampleSpring] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-28T00:15:03.341-03:00 ERROR 18188 --- [HelloWorldLogExampleSpring] [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.NullPointerException: Cannot invoke "org.springframework.core.env.Environment.getProperty(String)" because "this.env" is null
+	at br.juliok.HelloWorldLogExampleSpring.HelloWorldLogExampleSpringApplication.run(HelloWorldLogExampleSpringApplication.java:32) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83) ~[spring-core-6.1.14.jar:6.1.14]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.1.14.jar:6.1.14]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88) ~[spring-core-6.1.14.jar:6.1.14]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774) ~[spring-boot-3.3.5.jar:3.3.5]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:571) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.5.jar:3.3.5]
+	at br.juliok.HelloWorldLogExampleSpring.HelloWorldLogExampleSpringApplication.main(HelloWorldLogExampleSpringApplication.java:22) ~[classes/:na]
+
+2024-11-28T00:18:39.388-03:00  INFO 15212 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Starting HelloWorldLogExampleSpringApplication using Java 23 with PID 15212 (C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring\target\classes started by PownTwo in C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring)
+2024-11-28T00:18:39.389-03:00  INFO 15212 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T00:18:39.812-03:00  INFO 15212 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Started HelloWorldLogExampleSpringApplication in 0.713 seconds (process running for 1.275)
+2024-11-28T00:18:39.814-03:00  INFO 15212 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : Olá.. log
+2024-11-28T00:18:39.815-03:00 ERROR 15212 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : error teste
+2024-11-28T00:18:54.570-03:00  INFO 11068 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Starting HelloWorldLogExampleSpringApplication using Java 23 with PID 11068 (C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring\target\classes started by PownTwo in C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring)
+2024-11-28T00:18:54.571-03:00  INFO 11068 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T00:18:54.995-03:00  INFO 11068 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Started HelloWorldLogExampleSpringApplication in 0.721 seconds (process running for 1.272)
+2024-11-28T00:18:54.998-03:00  INFO 11068 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : Olá.. log
+2024-11-28T00:18:54.998-03:00 ERROR 11068 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : error teste
+2024-11-28T00:19:15.271-03:00  INFO 15148 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Starting HelloWorldLogExampleSpringApplication using Java 23 with PID 15148 (C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring\target\classes started by PownTwo in C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring)
+2024-11-28T00:19:15.272-03:00  INFO 15148 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T00:19:15.702-03:00  INFO 15148 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Started HelloWorldLogExampleSpringApplication in 0.748 seconds (process running for 1.295)
+2024-11-28T00:19:15.705-03:00  INFO 15148 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : Olá.. log
+2024-11-28T00:19:15.705-03:00 ERROR 15148 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : error teste
+2024-11-28T00:22:38.626-03:00  INFO 8060 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Starting HelloWorldLogExampleSpringApplication using Java 23 with PID 8060 (C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring\target\classes started by PownTwo in C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring)
+2024-11-28T00:22:38.628-03:00  INFO 8060 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T00:22:39.070-03:00  INFO 8060 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Started HelloWorldLogExampleSpringApplication in 0.745 seconds (process running for 1.305)
+2024-11-28T00:22:39.073-03:00  INFO 8060 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : Olá.. log
+2024-11-28T00:22:39.073-03:00 ERROR 8060 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : error teste
+2024-11-28T00:25:33.874-03:00  INFO 13064 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Starting HelloWorldLogExampleSpringApplication using Java 23 with PID 13064 (C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring\target\classes started by PownTwo in C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring)
+2024-11-28T00:25:33.875-03:00  INFO 13064 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T00:25:34.319-03:00  INFO 13064 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Started HelloWorldLogExampleSpringApplication in 0.746 seconds (process running for 1.307)
+2024-11-28T00:25:34.321-03:00  INFO 13064 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : Olá.. log
+2024-11-28T00:25:34.322-03:00 ERROR 13064 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : error teste22
+2024-11-28T00:29:41.863-03:00  INFO 13228 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Starting HelloWorldLogExampleSpringApplication using Java 23 with PID 13228 (C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring\target\classes started by PownTwo in C:\Alura-spring\HelloWorldLogExampleSpring\HelloWorldLogExampleSpring)
+2024-11-28T00:29:41.864-03:00  INFO 13228 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T00:29:42.304-03:00  INFO 13228 --- [HelloWorldLogExampleSpring] [main] .H.HelloWorldLogExampleSpringApplication : Started HelloWorldLogExampleSpringApplication in 0.737 seconds (process running for 1.289)
+2024-11-28T00:29:42.307-03:00  INFO 13228 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : Olá.. log
+2024-11-28T00:29:42.307-03:00 ERROR 13228 --- [HelloWorldLogExampleSpring] [main] b.j.H.LogginController                   : error teste22
